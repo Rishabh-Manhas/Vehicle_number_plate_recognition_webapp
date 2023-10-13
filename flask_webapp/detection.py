@@ -39,6 +39,6 @@ def OCR(path, filename):
     
     cv2.imwrite('./static/roi/{}'.format(filename), roi_bgr)
     text1  = read.readtext(roi)
-    text = text[1]
+    text = text1[0][1]
     print(text)
     return text
